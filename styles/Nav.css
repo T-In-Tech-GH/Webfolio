@@ -1,0 +1,33 @@
+.container { 
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid white;
+    height: 60px;
+}
+
+.logo { 
+    margin-top: 20px;
+    text-shadow: 2px 3px 4px black;
+    color: blue;
+}
+
+.link-list { 
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.link-name { 
+    color: #6eccff;
+    animation: bounce 1s ease-in infinite;
+}
+
+.link-name:hover {
+    color: white;
+    cursor: pointer;
+}
+

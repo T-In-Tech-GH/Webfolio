@@ -1,0 +1,36 @@
+.header { 
+    text-align: center;
+    margin-top: 80px;
+    color: #4ec1ffff;
+}
+
+.greeting { 
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.introduction { 
+    margin-left: 100px;
+    margin-top: 5px;
+}
+
+.mySpan { 
+    color: #6eccff;
+}
+
+.role { 
+    margin-left: 170px;
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.role2 { 
+    color: green;
+    font-weight: bold;
+}
+
+.image { 
+    width: 150px;
+    margin-left: 500px;
+    border-radius: 50%;
+}
