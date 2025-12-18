@@ -8,7 +8,8 @@
 .logo { 
     margin-top: 20px;
     text-shadow: 2px 3px 4px black;
-    color: blue;
+    color: white;
+    animation: fadeIn 1s ease-in;
 }
 
 .link-list { 
@@ -19,15 +20,32 @@
     justify-content: center;
     gap: 40px;
     margin-top: 20px;
+    animation: slideLeft 1.5s ease forwards;
 }
 
 .link-name { 
     color: #6eccff;
-    animation: bounce 1s ease-in infinite;
 }
 
 .link-name:hover {
     color: white;
     cursor: pointer;
+}
+@keyframes slideLeft { 
+    from { 
+        transform: translateX(100px);
+        opacity: 0;
+    } to { 
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeIn { 
+    0% { 
+        opacity: 0;
+    100% { 
+        opacity: 1;
+    }
+  }
 }
 

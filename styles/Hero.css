@@ -4,14 +4,20 @@
     color: #4ec1ffff;
 }
 
+.container1 { 
+    height: 250px;
+}
+
 .greeting { 
     margin-left: 70px;
     margin-top: 20px;
+    animation: slideRight 1.5s ease forwards;
 }
 
 .introduction { 
     margin-left: 100px;
-    margin-top: 5px;
+    margin-top: 10px;
+    animation: slideRight 1.5s ease forwards;
 }
 
 .mySpan { 
@@ -20,17 +26,109 @@
 
 .role { 
     margin-left: 170px;
-    margin-top: 5px;
+    margin-top: 3px;
     font-size: 25px;
+    animation: slideRight2 2s ease forwards;
 }
 
 .role2 { 
-    color: green;
     font-weight: bold;
+    animation: glowing-text 20s linear infinite;
+    color: black;
 }
 
 .image { 
-    width: 150px;
-    margin-left: 500px;
+    width: 250px;
+    margin-top: 2rem;
+    margin-left: 37rem;
     border-radius: 50%;
+    box-shadow: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000); 
+    animation: glowing 20s linear infinite; 
 }
+
+.image:hover { 
+    cursor: pointer;
+}
+
+@keyframes slideRight { 
+    0% { 
+        transform: translateX(-100px);
+        opacity: 0;
+    } 100% { 
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideRight1 { 
+    0% { 
+        transform: translateX(-80px);
+        opacity: 0;
+    } 100% { 
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideRight2 { 
+    0% { 
+        tranform: translateX(-60px);
+        opacity: 0;
+    } 100% { 
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes glowing { 
+    0% { 
+        box-shadow: 0 0 5px #ff0000;
+    }
+    14% { 
+        box-shadow: 0 0 20px #ff7300;
+    }
+    28% { 
+        box-shadow: 0 0 20px #fffb00;
+    }
+    42% { 
+        box-shadow: 0 0 20px #48ff00;
+    }
+    57% { 
+        box-shadow: 0 0 20px #00ffd5;
+    }
+    71% { 
+        box-shadow: 0 0 20px #002bff;
+    }
+    85% { 
+        box-shadow: 0 0 20px #7a00ff;
+    }
+    100% { 
+        box-shadow: 0 0 5px #ff00c8;
+    }
+}
+
+@keyframes glowing-text { 
+    0% { 
+        text-shadow: 0 0 5px #ff0000;
+    }
+    14% { 
+        text-shadow: 0 0 20px #ff7300;
+    }
+    28% { 
+        text-shadow: 0 0 20px #fffb00;
+    }
+    42% { 
+        text-shadow: 0 0 20px #48ff00;
+    }
+    57% { 
+        text-shadow: 0 0 20px #00ffd5;
+    }
+    71% { 
+        text-shadow: 0 0 20px #002bff;
+    }
+    85% { 
+        text-shadow: 0 0 20px #7a00ff;
+    }
+    100% { 
+        text-shadow: 0 0 5px #ff00c8;
+    }
+}
+
