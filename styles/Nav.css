@@ -9,7 +9,7 @@
     margin-top: 20px;
     text-shadow: 2px 3px 4px black;
     color: white;
-    animation: fadeIn 1s ease-in;
+    animation: fadeIn 2s ease forwards;
 }
 
 .link-list { 
@@ -46,6 +46,7 @@
     100% { 
         opacity: 1;
     }
+
   }
 }
 
