@@ -16,8 +16,8 @@ const navObj = [
         <h4 className="logo">T-In-Tech</h4>
         <ul className="link-list"> 
             {navObj.map((link, index) => ( 
-                <li key={index}> 
-                <a href={link.path} className="link-name">{link.name}</a>
+                <li className="link-name" key={index}>
+                <a href={link.path}>{link.name}</a>
                 </li>
             ))}
         </ul>

@@ -1,16 +1,20 @@
-import { useState } from 'react'
-import Nav from "../components/Nav.jsx"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Nav from "../components/Nav.jsx";
 import Hero from "../components/Hero.jsx";
+import About from "../components/About.jsx";
+import Skills from "../components/Skills.jsx";
 import './App.css'
 
-function App() {
+const App = () => {
 
-  return (
-    <>
-      <Nav /> 
-      <Hero />
+  return ( 
+    <> 
+    <Nav /> 
+     <Hero />
+      <About />
+      <Skills /> 
     </>
   )
 }
 
-export default App
+export default App;

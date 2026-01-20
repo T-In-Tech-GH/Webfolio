@@ -1,15 +1,13 @@
 .container { 
     display: flex;
     justify-content: space-around;
-    border: 1px solid white;
     height: 60px;
 }
 
 .logo { 
     margin-top: 20px;
     text-shadow: 2px 3px 4px black;
-    color: white;
-    animation: fadeIn 2s ease forwards;
+    animation: fadeIn 5s ease forwards, logoColorChange 10s infinite;
 }
 
 .link-list { 
@@ -21,6 +19,9 @@
     gap: 40px;
     margin-top: 20px;
     animation: slideLeft 1.5s ease forwards;
+}
+.link-name:hover { 
+   animation: bounce 1s infinite;  
 }
 
 .link-name { 
@@ -48,5 +49,25 @@
     }
 
   }
+}
+
+@keyframes logoColorChange { 
+    0% { 
+        color: #6eccff;
+    } 50% { 
+        color: #fff;
+    } 75% { 
+        color: #1c465dff;
+    } 100% { 
+        color: #6eccff;
+    }
+}
+
+@keyframes bounce { 
+    0%, 100% { 
+        transform: translateY(-5px);
+    } 50% { 
+        transform: translateY(0);
+    }
 }
 

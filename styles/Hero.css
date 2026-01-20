@@ -17,7 +17,7 @@
 .introduction { 
     margin-left: 100px;
     margin-top: 10px;
-    animation: slideRight1 1.5s ease backwards;
+    animation: slideRight 1.5s ease backwards;
 }
 
 .mySpan { 
@@ -34,16 +34,14 @@
 .role2 { 
     font-weight: bold;
     animation: glowing-text 20s linear infinite;
-    color: black;
 }
 
 .image { 
-    width: 250px;
-    margin-top: 2rem;
-    margin-left: 37rem;
-    border-radius: 50%;
-    box-shadow: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000); 
+    width: 25vw;
+    border-radius: 50%; 
     animation: glowing 20s linear infinite; 
+    display: flex;
+    margin: auto;
 }
 
 .image:hover { 
@@ -59,66 +57,22 @@
     }
 }
 
-@keyframes slideRight1 { 
-    0% { 
-        transform: translateX(-80px);
-        opacity: 0;
-    } 100% { 
-        transform: translateX(0px);
+@keyframes hoverBounce { 
+    0%, 100% { 
+        transform: translateY(0);
+    } 50% { 
+        transform: translateY(-20px);
     }
-}
+} 
 
 @keyframes glowing { 
     0% { 
-        box-shadow: 0 0 5px #ff0000;
-    }
-    14% { 
-        box-shadow: 0 0 20px #ff7300;
-    }
-    28% { 
-        box-shadow: 0 0 20px #fffb00;
-    }
-    42% { 
-        box-shadow: 0 0 20px #48ff00;
-    }
-    57% { 
-        box-shadow: 0 0 20px #00ffd5;
-    }
-    71% { 
-        box-shadow: 0 0 20px #002bff;
-    }
-    85% { 
-        box-shadow: 0 0 20px #7a00ff;
-    }
-    100% { 
-        box-shadow: 0 0 5px #ff00c8;
+        box-shadow: 0 0 30px #6eccff
+    } 50% { 
+        box-shadow: 0 0 60px #ff0000ff
+    } 100% { 
+        box-shadow: 0 0 90px #f2ff00ff
     }
 }
-
-@keyframes glowing-text { 
-    0% { 
-        text-shadow: 0 0 5px #ff0000;
-    }
-    14% { 
-        text-shadow: 0 0 20px #ff7300;
-    }
-    28% { 
-        text-shadow: 0 0 20px #fffb00;
-    }
-    42% { 
-        text-shadow: 0 0 20px #48ff00;
-    }
-    57% { 
-        text-shadow: 0 0 20px #00ffd5;
-    }
-    71% { 
-        text-shadow: 0 0 20px #002bff;
-    }
-    85% { 
-        text-shadow: 0 0 20px #7a00ff;
-    }
-    100% { 
-        text-shadow: 0 0 5px #ff00c8;
-    }
-}
+    
 

@@ -1,0 +1,32 @@
+.about { 
+    font-size: 2rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.containerAbout { 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.aboutMe { 
+    height: 30%;
+    width: 45%;
+    margin: auto;
+    animation: scrollIn 1s ease-in-out;
+    animation-delay: 0.5s;
+    padding: 1rem;
+    border: 2px solid white;
+    box-shadow: 0 4px 20px #fff
+}
+
+@keyframes scrollIn { 
+    0% { 
+        opacity: 0;
+        transform: translateY(50px);
+    } 100% { 
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
