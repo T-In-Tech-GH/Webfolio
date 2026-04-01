@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../styles/Hero.css";
 import image from "../src/assets/Myimg.jpeg";
+
 
 const Hero = () => { 
   const img = image;
@@ -9,6 +10,7 @@ const Hero = () => {
     
 return ( 
     <>
+    <div className="gridContainer">
     <div className="container1">
     <h4 className="greeting">Hello,</h4>
     <p className="introduction">I'm <span className="mySpan">Terrence</span></p>
@@ -17,10 +19,9 @@ return (
     <div className="container2">
     <img className="image" src={img} />  
     </div>
+    </div>
     </>
-)
-
-
+  )
 }
 
 export default Hero 

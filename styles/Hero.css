@@ -33,7 +33,7 @@
 
 .role2 { 
     font-weight: bold;
-    animation: glowing-text 20s linear infinite;
+    animation: glowingText 10s linear infinite;
 }
 
 .image { 
@@ -46,6 +46,16 @@
 
 .image:hover { 
     cursor: pointer;
+}
+
+@keyframes glowingText { 
+    0% { 
+        text-shadow: 0 0 10px red;
+    } 50% { 
+        text-shadow: 0 0 10px green;
+    } 100% { 
+        text-shadow: 0 0 10px blue;
+    }
 }
 
 @keyframes slideRight { 
@@ -66,12 +76,12 @@
 } 
 
 @keyframes glowing { 
-    0% { 
-        box-shadow: 0 0 30px #6eccff
+      0% { 
+        box-shadow: 3px 6px 20px #6eccff;
     } 50% { 
-        box-shadow: 0 0 60px #ff0000ff
+        box-shadow: 3px 6px 20px #ff0000ff;
     } 100% { 
-        box-shadow: 0 0 90px #f2ff00ff
+        box-shadow: 3px 6px 20px #f2ff00ff;
     }
 }
     

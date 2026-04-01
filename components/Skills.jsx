@@ -1,17 +1,17 @@
 import "../styles/Skills.css";
 
   const language = [ 
-    {name: "JavaScript", progress: "60%"},
-    {name: "Python", progress: "30%"},
-    {name: "C++", progress: "5%"},
-    {name: "Java", progress: "10%"},
+    {name: "JavaScript", progress: "60%", icon: "bx bxl-javascript"},
+    {name: "Python", progress: "30%", icon: "bx bxl-python"},
+    {name: "C++", progress: "5%", icon: "bx bxl-c-plus-plus"},
+    {name: "Java", progress: "10%", icon: "bx bxl-java"},
   ]
 
   const frameworks = [
-    {name: "React", progress: "55%"},
-    {name: "Node.js", progress: "40%"},
-    {name: "Express", progress: "35%"},
-    {name: "Django", progress: "20%"},
+    {name: "React", progress: "55%", icon: "bx bxl-react"},
+    {name: "Node.js", progress: "40%", icon: "bx bxl-nodejs"},
+    {name: "Vue", progress: "35%", icon: "bx bxl-vuejs"},
+    {name: "Django", progress: "20%", icon: "bx bxl-angular"},
   ]
 
   const Skills = () => { 
@@ -21,17 +21,21 @@ import "../styles/Skills.css";
 
             <div className="radialContainer"> 
                 {language.map((lang, index) => ( 
-                    <li key={index} className="listChild">{lang.name}: {lang.progress}</li>
+                    <div className="radialBar">
+                    <span key={index} className={lang.icon}></span>
+                    </div>
                 ))}
             </div>
 
         <h2 className="frameName">Frameworks</h2>
-         <div className="frame">
-                {frameworks.map((framework, index) => ( 
-                    <div key={index} className="listChild">{framework.name}: {framework.progress}</div>
+         <div className="radialContainer">
+                {frameworks.map((framework, index) => (
+                    <div className="radialBar">
+                      <span key={index} className={framework.icon}>
+                      </span>
+                    </div>
                 ))}
             </div>
-        
         </>
     )
 }

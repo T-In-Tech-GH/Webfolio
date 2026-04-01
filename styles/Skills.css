@@ -1,9 +1,10 @@
 .radialContainer { 
-    display: flex;
+    display: grid;
     gap: 40px;
-    flex-wrap: wrap;
-    margin-top: 20px;
+    grid-template-columns: repeat(2, 1fr);
     list-style: none;
+    justify-items: center;
+    margin-top: 60px;
 }
 
 .radialCard {
@@ -13,35 +14,18 @@
 }
 
 .radialBar { 
-    --size: 140px;
-
-    width: var(--size);
-    height: var(--size);
     border-radius: 50%;
-    background: conic-gradient(
-        white var(--value),
-        rgba(255, 255, 255, 0.15) 0%
-    );
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
 }
-
 
 .languageName { 
     text-align: center;
+    margin-top: 90px;
 }
 
-.listChild { 
-    border: 1px solid white;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    text-align: center;
-    
-}
+
 
 .frameName { 
     text-align: center;
@@ -49,10 +33,6 @@
     margin-bottom: 50px;
 }
 
-
-.frame { 
-    display: flex;
-    list-style: none;
-    gap: 40px;
-    flex-wrap: wrap;
+.bxl-javascript { 
+    color: yellow; 
 }
