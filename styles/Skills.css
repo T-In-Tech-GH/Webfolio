@@ -1,11 +1,25 @@
 .radialContainer { 
-    display: grid;
-    gap: 40px;
-    grid-template-columns: repeat(2, 1fr);
-    list-style: none;
-    justify-items: center;
-    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+    flex-wrap: wrap; 
+    gap: 1rem;
 }
+
+.progressFill { 
+    background-color: #fff;
+    border-radius: 10px;
+    color: white;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform-origin: left;
+    transform: scaleX(0);
+    width: 100%;
+    height: 5px;
+    margin-bottom: 35px;
+    animation: fillAnimation 2s forwards;
+    }
 
 .radialCard {
     display: flex;
@@ -33,6 +47,47 @@
     margin-bottom: 50px;
 }
 
+.bx { 
+  font-size: 30px;
+}
+
 .bxl-javascript { 
-    color: yellow; 
+    color: yellow;
+}
+
+.bxl-python { 
+    color: orange;
+}
+
+.bxl-c-plus-plus { 
+    color: #6eccff;
+}
+
+.bxl-java { 
+    color: red;
+}
+
+.bxl-react { 
+    color: #6eccff;
+}
+
+.bxl-nodejs { 
+    color: #00ff00
+}
+
+.bxl-vuejs { 
+    color: red;
+}
+
+.bxl-angular { 
+    color: purple;
+}
+
+@keyframes fillAnimation { 
+    0% { 
+        width: 0;
+}   100% { 
+        width: 100px;
+        background-color: white;
+    }
 }

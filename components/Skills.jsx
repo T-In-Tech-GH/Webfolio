@@ -21,7 +21,7 @@ import "../styles/Skills.css";
 
             <div className="radialContainer"> 
                 {language.map((lang, index) => ( 
-                    <div className="radialBar">
+                    <div className="progressBar">
                     <span key={index} className={lang.icon}></span>
                     </div>
                 ))}
@@ -30,9 +30,9 @@ import "../styles/Skills.css";
         <h2 className="frameName">Frameworks</h2>
          <div className="radialContainer">
                 {frameworks.map((framework, index) => (
-                    <div className="radialBar">
-                      <span key={index} className={framework.icon}>
-                      </span>
+                    <div className="progressBar">
+                      <span key={index} className={framework.icon}></span>
+                      <div className="progressFill" style={{ width: `${framework.progress}`}}></div>
                     </div>
                 ))}
             </div>

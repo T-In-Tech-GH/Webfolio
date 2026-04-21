@@ -1,32 +1,50 @@
 .about { 
     font-size: 2rem;
-    margin-top: 4rem;
+    margin-bottom: 4rem;
     text-align: center;
 }
 
 .containerAbout { 
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-contnet: center;
+    flex-direction:
 }
 
-.aboutMe { 
-    height: 30%;
-    width: 45%;
-    margin: auto;
-    animation: scrollIn 1s ease-in-out;
-    animation-delay: 0.5s;
-    padding: 1rem;
-    border: 2px solid white;
-    box-shadow: 0 4px 20px #fff
+.image { 
+    display: flex;
+    width: 15vw;
+    border-radius: 50%; 
+    animation: glowing 20s linear infinite; 
+    margin: 3rem;
 }
+
+
+.aboutMe { 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 45%;
+    font-size: clamp(0.5rem, 2.5vw, 1.2rem);
+    animation: scrollIn 1s ease-in-out;
+    animation-delay: 1s;
+    text-align: center;
+    border: 1px solid white;
+    padding: 0 auto;
+}
+
+
 
 @keyframes scrollIn { 
     0% { 
         opacity: 0;
-        transform: translateY(50px);
+        transform: translateX(50px);
+    } 50% { 
+        opacity: 0.5;
+        transform: translateX(25px);
     } 100% { 
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateX(0px);
     }
 }

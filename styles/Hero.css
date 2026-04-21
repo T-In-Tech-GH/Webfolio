@@ -4,6 +4,11 @@
     color: #4ec1ffff;
 }
 
+.gridContainer { 
+    display: grid;
+    grid-template-columns: 
+}
+
 .container1 { 
     height: 250px;
 }
@@ -34,18 +39,6 @@
 .role2 { 
     font-weight: bold;
     animation: glowingText 10s linear infinite;
-}
-
-.image { 
-    width: 25vw;
-    border-radius: 50%; 
-    animation: glowing 20s linear infinite; 
-    display: flex;
-    margin: auto;
-}
-
-.image:hover { 
-    cursor: pointer;
 }
 
 @keyframes glowingText { 
