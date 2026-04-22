@@ -17,24 +17,32 @@ import "../styles/Skills.css";
   const Skills = () => { 
     return ( 
         <> 
-        <h2 className="languageName">Languages</h2>
-
-            <div className="radialContainer"> 
-                {language.map((lang, index) => ( 
-                    <div className="progressBar">
-                    <span key={index} className={lang.icon}></span>
+      <h2 className="grid-item languageName">Languages</h2>  
+        <div className="grid item gridContainerSkills">
+            <div className="grid-item radialContainer"> 
+                {language.map((lang, index) => (
+                    <div className="grid-item wrapper">
+                      <span key={index} className={lang.icon}></span>
+                    <div className="progressBar" style={{ width: `${language.progress}`}}>
+                        <span></span>
+                    </div>
                     </div>
                 ))}
             </div>
+            </div>
 
-        <h2 className="frameName">Frameworks</h2>
-         <div className="radialContainer">
+       <h2 className="grid-item frameName">Frameworks</h2>
+       <div className="grid item gridContainerSkills">
+         <div className="grid-item radialContainer">
                 {frameworks.map((framework, index) => (
-                    <div className="progressBar">
-                      <span key={index} className={framework.icon}></span>
-                      <div className="progressFill" style={{ width: `${framework.progress}`}}></div>
+                    <div className="grid-item wrapper">
+                    <span key={index} className={framework.icon}></span>
+                      <div className="grid-item progressBar" style={{ width: `${framework.progress}`}}>
+                        <span></span>
+                      </div>
                     </div>
                 ))}
+            </div>
             </div>
         </>
     )

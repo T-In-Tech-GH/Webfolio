@@ -1,25 +1,32 @@
+.gridContainerSkills { 
+    display: grid;
+    align-itesm: center;
+}
+
 .radialContainer { 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
-    margin-top: 50px;
-    flex-wrap: wrap; 
-    gap: 1rem;
 }
 
-.progressFill { 
-    background-color: #fff;
-    border-radius: 10px;
-    color: white;
-    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+.progressBar { 
+    color: black;
+    background-color: black;
+    animation: fillAnimation 1s cubic-bezier(1, 0, 0.5, 1) forwards;
     transform-origin: left;
-    transform: scaleX(0);
+    transform: scaleX(1);
     width: 100%;
     height: 5px;
     margin-bottom: 35px;
-    animation: fillAnimation 2s forwards;
-    }
+
+}
+
+.wrapper { 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
 
 .radialCard {
     display: flex;
@@ -38,8 +45,6 @@
     text-align: center;
     margin-top: 90px;
 }
-
-
 
 .frameName { 
     text-align: center;
@@ -87,7 +92,7 @@
     0% { 
         width: 0;
 }   100% { 
-        width: 100px;
-        background-color: white;
+        width: 100%;
+        background-color: black;
     }
 }
