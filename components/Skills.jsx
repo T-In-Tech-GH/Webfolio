@@ -17,15 +17,15 @@ import "../styles/Skills.css";
   const Skills = () => { 
     return ( 
         <> 
-      <h2 className="grid-item languageName">Languages</h2>  
-        <div className="grid item gridContainerSkills">
-            <div className="grid-item radialContainer"> 
+      <h2 className="grid-item languageName">Languages</h2>
+       <div className="grid item gridContainerSkills">
+         <div className="grid-item barContainer">
                 {language.map((lang, index) => (
                     <div className="grid-item wrapper">
-                      <span key={index} className={lang.icon}></span>
-                    <div className="progressBar" style={{ width: `${language.progress}`}}>
-                        <span></span>
-                    </div>
+                    <span key={index} className={lang.icon}></span>
+                      <div className="grid-item progressTrack">
+                        <div className="progressFill" style={{ width: `${lang.progress}`}} /> 
+                      </div>
                     </div>
                 ))}
             </div>
@@ -33,12 +33,12 @@ import "../styles/Skills.css";
 
        <h2 className="grid-item frameName">Frameworks</h2>
        <div className="grid item gridContainerSkills">
-         <div className="grid-item radialContainer">
+         <div className="grid-item barContainer">
                 {frameworks.map((framework, index) => (
                     <div className="grid-item wrapper">
                     <span key={index} className={framework.icon}></span>
-                      <div className="grid-item progressBar" style={{ width: `${framework.progress}`}}>
-                        <span></span>
+                      <div className="grid-item progressTrack">
+                        <div className="progressFill" style={{ width: `${framework.progress}`}} /> 
                       </div>
                     </div>
                 ))}
