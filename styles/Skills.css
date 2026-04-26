@@ -5,9 +5,8 @@
 
 .barContainer { 
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-content: center;
+    flex-direction: column;
 }
 
 .wrapper { 
@@ -19,6 +18,7 @@
 
 .progressTrack { 
     color: #ccc;
+    margin: 15px;
     min-width: 30%;
     min-height: 4px;
     overflow: hidden;
@@ -28,7 +28,7 @@
 
 .progressFill { 
     background: black;
-    animation: fillAnimation 10s cubic-bezier(1, 0, 0.5, 1) forwards;
+    animation: fillAnimation 1.5s cubic-bezier(1, 0, 0.5, 1) forwards;
     transform-origin: left;
     transform: scaleX(1);
     height: 4px;
@@ -86,7 +86,6 @@
     0% { 
         width: 0;
 }   100% { 
-        width: 100%;
         background-color: black;
     }
 }

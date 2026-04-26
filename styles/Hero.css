@@ -42,11 +42,15 @@
 
 @keyframes glowingText { 
     0% { 
-        text-shadow: 0 0 10px red;
+        color: red;
+    } 25% { 
+        color: green;
     } 50% { 
-        text-shadow: 0 0 10px green;
+        color: blue;
+    } 75% { 
+        color: orange;
     } 100% { 
-        text-shadow: 0 0 10px blue;
+        color: red;
     }
 }
 
@@ -63,7 +67,7 @@
     0%, 100% { 
         transform: translateY(0);
     } 50% { 
-        transform: translateY(-20px);
+        transform: translateY(-15px);
     }
 } 
 

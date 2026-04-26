@@ -13,7 +13,7 @@
 
 .image { 
     display: flex;
-    width: 15vw;
+    width: 17vw;
     border-radius: 50%; 
     animation: glowing 20s linear infinite; 
     margin: 3rem;
@@ -39,10 +39,10 @@
 @keyframes scrollIn { 
     0% { 
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateX(-50px);
     } 50% { 
         opacity: 0.5;
-        transform: translateX(25px);
+        transform: translateX(-25px);
     } 100% { 
         opacity: 1;
         transform: translateX(0px);
