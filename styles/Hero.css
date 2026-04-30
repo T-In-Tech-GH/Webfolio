@@ -13,8 +13,8 @@
 }
 
 .greeting { 
-    margin-left: 70px;
-    margin-top: 20px;
+    margin-left: 75px;
+    margin-top: 30px;
     animation: slideRight 1.5s ease forwards;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .role { 
-    margin-left: 70px;
+    margin-left: 125px;
     margin-top: 10px;
     font-size: 25px;
     animation: slideRight 2s ease forwards;
@@ -38,6 +38,10 @@
 .role2 { 
     font-weight: bold;
     animation: glowingText 10s linear infinite;
+}
+
+.blinker { 
+    animation: blinking 1s infinite;
 }
 
 @keyframes glowingText { 
@@ -78,6 +82,16 @@
         box-shadow: 3px 6px 20px #ff0000ff;
     } 100% { 
         box-shadow: 3px 6px 20px #f2ff00ff;
+    }
+}
+
+@keyframes blinking { 
+    0% { 
+        opacity: 1;
+    } 50% { 
+        opacity: 0;
+    } 100% { 
+        opactiy: 1; 
     }
 }
     

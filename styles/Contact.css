@@ -1,0 +1,17 @@
+.contactName { 
+text-align: center;
+margin-top: 60px;
+font-size: 25px;
+}
+
+.callButton { 
+    color: red;
+    text-align: center;
+    min-width: 60px;
+    min-height: 20px;
+}
+
+fieldset { 
+    width: 200px;
+    height: 100px;
+}

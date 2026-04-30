@@ -68,10 +68,13 @@
 
 .bxl-react { 
     color: #6eccff;
+    height: 28px;
+    animation: rotate 15s linear infinite 
 }
 
 .bxl-nodejs { 
-    color: #00ff00
+    color: #00ff00;
+    animation: glow 10s linear infinite;
 }
 
 .bxl-vuejs { 
@@ -87,5 +90,19 @@
         width: 0;
 }   100% { 
         background-color: black;
+    }
+}
+
+@keyframes rotate { 
+ 0% { 
+    transform: rotate(0deg);
+   } 100% { 
+    transform: rotate(360deg);
+   }
+}
+
+@keyframes glow { 
+    0% { 
+        text-shadow: 5px 5px 100px #00ff00;
     }
 }
