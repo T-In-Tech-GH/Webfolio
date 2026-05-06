@@ -26,6 +26,7 @@
 
 .mySpan { 
     color: #6eccff;
+    font-weight: bold;
 }
 
 .role { 
@@ -41,7 +42,7 @@
 }
 
 .blinker { 
-    animation: blinking 1s infinite;
+    
 }
 
 @keyframes glowingText { 

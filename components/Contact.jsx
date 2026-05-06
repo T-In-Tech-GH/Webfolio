@@ -16,12 +16,14 @@ return (
     <> 
     <h1 className="contactName">Contact</h1>
      <div className="grid-item logoContainer">
+        <div className="comBtns">
     <a href="tel:18645908123">
         <button className="grid-item callButton">Call Me</button>
         </a>
     <a href="mailto: Terrencew867@gmail.com"> 
         <button className="grid-item emailBtn">Email</button>
         </a>
+        </div>
    <ul className="grid-item linkLogo">
      {links.map((icon, index) => ( 
         <li className="grid-item iconName" key={index}> 

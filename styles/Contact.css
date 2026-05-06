@@ -7,12 +7,20 @@
 .callButton { 
     color: red;
     text-align: center;
-    min-width: 60px;
-    min-height: 20px;
+   
 }
 
 .logoContainer { 
     display: grid;
+}
+
+.comBtns { 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px 20px;
 }
 
 .linkLogo { 
