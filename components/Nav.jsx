@@ -1,4 +1,5 @@
 import "../styles/Nav.css";
+import { useState } from "react";
 
 const Nav = () => { 
 
@@ -7,8 +8,9 @@ const navObj = [
     {name: "About", path: "./About"},
     {name: "Skills", path: "./Skills"},
     {name: "Contact", path: "./Contact"},
-
 ]
+
+const [isOpen, setIsopen] = useState(false);
 
     return (
         <> 
@@ -22,6 +24,16 @@ const navObj = [
             ))}
         </ul>
         </div>
+        <div className="hamburgerMenu" onClick={() => setIsopen(!isOpen)}>☰</div>
+        {isOpen && ( 
+            <ul> 
+                {navObj.map((link, index) => ( 
+                    <li key={index}>
+                        <a href={link.path}>{link.name}</a>
+                    </li>
+                ))}
+            </ul>
+        )}
         </>
     )
 }
