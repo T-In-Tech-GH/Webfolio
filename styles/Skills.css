@@ -69,16 +69,16 @@
 .bxl-react { 
     color: #6eccff;
     height: 28px;
-    animation: rotate 15s linear infinite 
+    animation: rotate 15s linear infinite;
 }
 
 .bxl-nodejs { 
     color: #00ff00;
-    animation: glow 10s linear infinite;
 }
 
 .bxl-vuejs { 
     color: red;
+    animation: orangeGlow 3s infinite alternate;
 }
 
 .bxl-angular { 
@@ -101,8 +101,10 @@
    }
 }
 
-@keyframes glow { 
+@keyframes orangeGlow { 
     0% { 
-        text-shadow: 5px 5px 100px #00ff00;
+        text-shadow: 5px 5px 100px #ffcc00;
+    } 100% { 
+        text-shadow: 10px 10px 200px #ffcc00;
     }
 }

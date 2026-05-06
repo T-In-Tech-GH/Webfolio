@@ -1,7 +1,7 @@
 .contactName { 
-text-align: center;
-margin-top: 60px;
-font-size: 25px;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 25px;
 }
 
 .callButton { 
@@ -11,7 +11,24 @@ font-size: 25px;
     min-height: 20px;
 }
 
-fieldset { 
-    width: 200px;
-    height: 100px;
+.logoContainer { 
+    display: grid;
+}
+
+.linkLogo { 
+   display: flex;
+   justify-content: center;
+   gap: 35px;
+   list-style: none;
+}
+
+.iconName {
+   border: solid 2.5px black;
+   border-radius: 100%;
+   padding: 5px;
+}
+
+.iconName a { 
+    text-decoration: none;
+    font-size: 25px;
 }

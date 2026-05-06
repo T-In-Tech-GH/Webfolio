@@ -4,7 +4,7 @@ import "../styles/Hero.css";
 
 const Hero = () => { 
 
-const roles = "Software Engineer";
+const roles = ["Software Engineer"];
 
 return ( 
     <>
